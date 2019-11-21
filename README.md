@@ -1,7 +1,8 @@
 # Passo a passo IONIC 4 no Linux
 
 Criar um repositório no GitHub para o app: projeto_app.  <br><br>
-Adicionar o usuário "alexcamargoweb" como colaborador.
+Adicionar o usuário "alexcamargoweb" como colaborador. <br><br>
+Fazer o clone do projeto em /home/aluno/
 
 ### Instalação
 
