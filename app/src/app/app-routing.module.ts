@@ -14,6 +14,22 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'listar-noticias',
+    loadChildren: () => import('./listar-noticias/listar-noticias.module').then( m => m.ListarNoticiasPageModule)
+  },
+  {
+    path: 'listar-usuarios',
+    loadChildren: () => import('./listar-usuarios/listar-usuarios.module').then( m => m.ListarUsuariosPageModule)
+  },
+  {
+    path: 'cadastrar-noticia',
+    loadChildren: () => import('./cadastrar-noticia/cadastrar-noticia.module').then( m => m.CadastrarNoticiaPageModule)
+  },
+  {
+    path: 'cadastrar-usuario',
+    loadChildren: () => import('./cadastrar-usuario/cadastrar-usuario.module').then( m => m.CadastrarUsuarioPageModule)
   }
 ];
 
