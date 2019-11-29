@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-cadastrar-noticia',
   templateUrl: './cadastrar-noticia.page.html',
@@ -11,5 +12,7 @@ export class CadastrarNoticiaPage implements OnInit {
 
   ngOnInit() {
   }
+
+
 
 }

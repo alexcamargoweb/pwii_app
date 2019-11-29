@@ -20,7 +20,7 @@ $ ionic serve
 
 ### Implementação do projeto
 
-Criando as novas página: <br>
+Criar as novas página: <br>
 
 $ ionic g page listar-noticias <br>
 $ ionic g page listar-usuarios <br><br>
@@ -28,12 +28,99 @@ $ ionic g page listar-usuarios <br><br>
 $ ionic g page cadastrar-noticia <br>
 $ ionic g page cadastrar-usuario <br><br>
 
-Criando o cadastro de notícias conteúdo: <br>
+Criar o cadastro de notícias conteúdo: <br>
 
 Alterar o arquivo "home.page.html": deixar somente o "content" <br>
 Incluir um card de conteúdo <br>
 Criar um diretório para as imagens em "app/src/assets/" <br>
 Incluir uma imagem no card criado <br> 
+
+Navegação entre as páginas e botão FAB: <br><br>
+
+Editar o arquivo "home.page.html". <br>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="primary" (click)="abreCadastro()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<br>
+
+Redirecionar para a página de cadastro: editar o arquivo "home.page.ts" <br>
+
+  constructor(public nav: NavController, private route: Router) {}
+
+  abreCadastro(){
+    this.nav.navigateForward('/cadastrar-noticia')
+  }
+
+<br>
+
+Adicionar o botão de voltar: editar o arquivo "cadastrar-noticia.page.html" <br>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastrar notícia</ion-title>
+  </ion-toolbar>
+
+<br>
+
+Criar formulário de cadastro: editar o arquivo "cadastrar-noticia.page.html" <br>
+
+<ion-content padding>
+    <ion-list>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Título</ion-label>
+          <ion-input type="text" name="titulo" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Descrição</ion-label>
+            <ion-textarea rows="6" cols="20" name="descricao"></ion-textarea>
+          </ion-item>
+        <ion-item>
+            <ion-label>Tipo</ion-label>
+            <ion-select placeholder="Tipo da notícia" name="tipo">
+              <ion-select-option value="esporte">Esporte</ion-select-option>
+              <ion-select-option value="cultura">Cultura</ion-select-option>
+              <ion-select-option value="lazer">Lazer</ion-select-option>
+            </ion-select>
+          </ion-item>
+        <div style="margin-top: 40px;">
+          <ion-button expand="full" color="primary">Cadastrar</ion-button>
+        </div>
+      </form>
+    </ion-list>
+  </ion-content>
+
+  <br>
+
+  Realizar os imports do formulário: editar o arquivo "cadastrar-noticia.page.ts" <br>
+
+
+
+
+
+
+
+
+
+
+
+Criando um serviço de conexão com o banco de dados: <br>
+
+$ ionic g service "service/url" <br><br>
+
+Editar o arquivo "service/url.service.ts": <br>
+
+
+
+
+
+
 
 ### Executar app (via USB no dispositivo)
 
