@@ -124,9 +124,7 @@ Editar o arquivo "service/url.service.ts": <br>
 
 ### Executar app (via USB no dispositivo)
 
-$ ionic platform add android <br>
 $ npm i -g cordova@latest <br>
-$ ionic cordova platform rm android <br>
 $ ionic cordova platform add android <br><br>
 
 Alterar as linhas 73 e 75 de "diretorio_do_app/app/platforms/android/gradlew.sh" para: <br>
