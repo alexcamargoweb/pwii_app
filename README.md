@@ -39,11 +39,13 @@ Navegação entre as páginas e botão FAB: <br><br>
 
 Editar o arquivo "home.page.html". <br>
 
+```
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button color="primary" (click)="abreCadastro()">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
+```
 
 <br>
 
@@ -59,17 +61,20 @@ Redirecionar para a página de cadastro: editar o arquivo "home.page.ts" <br>
 
 Adicionar o botão de voltar: editar o arquivo "cadastrar-noticia.page.html" <br>
 
+```
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Cadastrar notícia</ion-title>
   </ion-toolbar>
+```
 
 <br>
 
 Criar formulário de cadastro: editar o arquivo "cadastrar-noticia.page.html" <br>
 
+```
 <ion-content padding>
     <ion-list>
       <form>
@@ -95,6 +100,8 @@ Criar formulário de cadastro: editar o arquivo "cadastrar-noticia.page.html" <b
       </form>
     </ion-list>
   </ion-content>
+
+```
 
   <br>
 
@@ -133,7 +140,6 @@ Alterar as linhas 73 e 75 de "diretorio_do_app/app/platforms/android/gradlew.sh"
     else 
         JAVACMD="$JAVA_HOME" 
 
-$ ionic cordova build android --device <br>
 $ ionic cordova run android --device (confirmar a permissão de execução no dispositivo) <br>
 
 
