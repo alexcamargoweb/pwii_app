@@ -19,7 +19,12 @@ export class AppComponent {
     {
       title: 'List',
       url: '/list',
-      icon: 'list'
+      icon: 'list',
+    },
+    {
+      title: 'Cadastrar notícia',
+      url: '/cadastrar-noticia',
+      icon: 'add',
     }
   ];
 
