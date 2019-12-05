@@ -9,14 +9,24 @@
 
 <ion-content padding>
     <ion-list>
-      <form >
+      <form padding [formGroup]="loginForm" (submit)="login()" novalidate>
         <ion-item>
           <ion-label position="floating">Título</ion-label>
-          <ion-input type="text" name="titulo" ></ion-input>
+          <ion-input
+            [(ngModel)]="titulo"
+            formControlName="titulol"
+            type="text"
+            clearInput clearOnEdit="false" 
+          ></ion-input>
         </ion-item>
         <ion-item>
             <ion-label>Descrição</ion-label>
-            <ion-textarea rows="6" cols="20" name="descricao"></ion-textarea>
+            <ion-textarea 
+                rows="6" cols="20" 
+                [(ngModel)]="descricao"
+                formControlName="descricao"
+                clearInput clearOnEdit="false"    
+            ></ion-textarea>
           </ion-item>
         <ion-item>
             <ion-label>Tipo</ion-label>
