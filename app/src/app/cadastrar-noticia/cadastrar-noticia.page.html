@@ -30,7 +30,11 @@
           </ion-item>
         <ion-item>
             <ion-label>Tipo</ion-label>
-            <ion-select name="tipo">
+            <ion-select 
+            [(ngModel)]="tipo"
+                 formControlName="tipo"
+                 clearInput clearOnEdit="false"
+            >
               <ion-select-option value="esporte">Esporte</ion-select-option>
               <ion-select-option value="cultura">Cultura</ion-select-option>
               <ion-select-option value="lazer">Lazer</ion-select-option>
