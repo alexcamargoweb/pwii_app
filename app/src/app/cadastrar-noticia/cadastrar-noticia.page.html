@@ -14,11 +14,12 @@
           <ion-label position="floating">Título</ion-label>
           <ion-input
             [(ngModel)]="titulo"
-            formControlName="titulol"
+            formControlName="titulo"
             type="text"
             clearInput clearOnEdit="false" 
           ></ion-input>
         </ion-item>
+        <h6 *ngIf="errorTitulo" class="error"> {{messageEmail}}</h6>
         <ion-item>
             <ion-label>Descrição</ion-label>
             <ion-textarea 
@@ -28,6 +29,7 @@
                 clearInput clearOnEdit="false"    
             ></ion-textarea>
           </ion-item>
+          <h6 *ngIf="errorDescricao" class="error"> {{messageDescricao}}</h6>
         <ion-item>
             <ion-label>Tipo</ion-label>
             <ion-select 
@@ -40,6 +42,7 @@
               <ion-select-option value="lazer">Lazer</ion-select-option>
             </ion-select>
           </ion-item>
+          <h6 *ngIf="errorTipo" class="error"> {{messageTipo}}</h6>
         <div style="margin-top: 40px;">
           <ion-button expand="full" color="primary">Cadastrar</ion-button>
         </div>
