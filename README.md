@@ -105,28 +105,13 @@ Criar formulário de cadastro: editar o arquivo "cadastrar-noticia.page.html" <b
 
   <br>
 
-  Realizar os imports do formulário: editar o arquivo "cadastrar-noticia.page.ts" <br>
-
-
-
-
-
-
-
-
-
-
+Realizar os imports do formulário: editar o arquivo "cadastrar-noticia.page.ts" <br>
 
 Criando um serviço de conexão com o banco de dados: <br>
 
 $ ionic g service "service/url" <br><br>
 
 Editar o arquivo "service/url.service.ts": <br>
-
-
-
-
-
 
 
 ### Executar app (via USB no dispositivo)
@@ -141,7 +126,6 @@ Alterar as linhas 73 e 75 de "diretorio_do_app/app/platforms/android/gradlew.sh"
         JAVACMD="$JAVA_HOME" 
 
 $ ionic cordova run android --device (confirmar a permissão de execução no dispositivo) <br>
-
 
 ### Compilar app (criar APK)
 
