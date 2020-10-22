@@ -178,7 +178,8 @@ Alterar as linhas 73 e 75 de "sdkmanager.sh" e "avdmanager.sh" para: <br><br>
 
 Instalar as ferramentas de build: <br><br>
 
-$ ./sdkmanager "build-tools;19.1.0" <br>
+$ ./sdkmanager --list <br>
+$ ./sdkmanager "build-tools;29.0.2" <br>
 $ ./sdkmanager --licenses <br><br>
 
 Para testar as configurações: <br><br>
